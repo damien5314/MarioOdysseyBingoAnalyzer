@@ -3,6 +3,11 @@
   "name": "SMO Bingo Analyzer",
   "version": "1.0",
   "description": "Displays the earliest finishes for goals on a SMO Bingo board. Credit to AzHarcos.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "smobingoanalyzer@github.com"
+    }
+  },
   "icons": {
     "100": "icons/smo-cappy.png"
   },
