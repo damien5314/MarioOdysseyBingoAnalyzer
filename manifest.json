@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+  "name": "SMO Bingo Analyzer",
+  "version": "1.0",
+  "description": "Displays the earliest finishes for goals on a SMO Bingo board. Credit to AzHarcos.",
+  "icons": {
+    "100": "icons/bingo-100-light.png"
+  },
+  "permissions": [
+    "*://*.bingosync.com/*"
+  ],
+  "browser_action": {
+    "default_icon": "icons/bingo-100.png",
+    "default_title": "Analyze Bingo Board",
+    "theme_icons": [
+      {
+        "light": "icons/bingo-100-light.png",
+        "dark": "icons/bingo-100-dark.png",
+        "size": 100
+      }
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.bingosync.com/*"
+      ],
+      "js": [
+        "analyzer.js"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  }
+}
